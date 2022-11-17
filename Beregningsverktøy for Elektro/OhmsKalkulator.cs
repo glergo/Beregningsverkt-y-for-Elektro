@@ -81,7 +81,10 @@ namespace Beregningsverktøy_for_Elektro
 
     public class BeregneOhmsLov
     {
-        public double beregnetSpenning, beregnetEffekt, beregnetAmpere, beregnetMotstand;
+        public double beregnetMotstand { get; set; }
+        public double beregnetEffekt { get; set; }
+        public double beregnetAmpere { get; set; }
+        public double beregnetSpenning { get; set; }
         public void beregneOhmsLov(double spenning = 0, double effekt = 0, double ampere = 0, double motstand = 0)
         {
             if (motstand == 0 && effekt == 0)
