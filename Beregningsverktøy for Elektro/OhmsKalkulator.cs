@@ -13,8 +13,8 @@ namespace Beregningsverktøy_for_Elektro
 {
     public partial class OhmsKalkulator : Form
     {
-        bool erResatt = true;
-        int antallTekstBokser = 0;
+        private bool erResatt = true;
+        private int antallTekstBokser = 0;
         private void buttonOhmKalkuler_Click(object sender, EventArgs e)
         {
             ValiderTekstbokser();
